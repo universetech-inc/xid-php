@@ -1,0 +1,34 @@
+{
+    "name": "fpay/xid-php",
+    "version": "1.0.1",
+    "description": "Globally Unique ID Generator",
+    "homepage": "https://github.com/fpay/xid-php",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fpay\\Xid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fpay\\Xid\\Tests\\": "tests"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jerray",
+            "email": "jerrayfu@gmail.com"
+        }
+    ],
+    "support": {
+      "issues": "https://github.com/fpay/xid-php/issues",
+      "source": "https://github.com/fpay/xid-php"
+    }
+}

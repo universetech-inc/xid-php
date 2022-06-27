@@ -1,0 +1,15 @@
+node_modules
+bower_components
+
+*.log
+*.swp
+*.swo
+.DS_Store
+
+vendor
+composer.lock
+composer.phar
+
+_lint
+coverage
+tests/tmp

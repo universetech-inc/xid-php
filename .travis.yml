@@ -1,0 +1,17 @@
+language: php
+php:
+  - 7.0
+  - 7.1
+  - nightly
+
+before_script:
+  - echo yes | pecl install -f apcu
+  - phpenv config-add travis.ini
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
+
+script:
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
+
+after_script:
+  - bash <(curl -s https://codecov.io/bash)
